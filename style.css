@@ -221,6 +221,16 @@ select {
     opacity: 1;
 }
 
+#submit{
+    margin-left: 30%;
+    width:30%;
+    border-radius: 15px;
+    height: 35px;
+    background-color: greenyellow;
+}
 
+#submit:hover{
+    background-color: green;
+}
 
 
