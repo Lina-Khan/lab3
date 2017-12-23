@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Password request form</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+    <script>
+        webshims.setOptions('forms-ext', {types: 'date'});
+        webshims.polyfill('forms forms-ext');
+    </script>
+
+</head>
+<body>
+<div class="background">
+    <div class = "backhead">
+        <div class = "centerElement">
+            <header>
+                <label class = "headerText">Password request form</label>
+            </header>
+            <div class="view">
+                <div>
+                    <form method=POST action="https://www.w3schools.com/action_page.php">
+                        <div class = "must">
+                            <label class ="mustLabel" aria-hidden="true" dir="auto">* Обязательно</label>
+                        </div>
+
+                        <div>
+                            <legend>
+                                Please fill your name
+                                <span class="labelstar">*</span>
+                            </legend>
+                            <div>
+                                <input class="textInput" name="name" type="text" placeholder="Мой ответ">
+                            </div>
+                        </div>
+
+                        <div>
+                            <legend>
+                                What color you like?
+                                <span class="labelstar">*</span>
+                            </legend>
+
+                            <p>
+                                <input type="radio" id="radioRed" name="color" value="Red" />
+                                <label for="radioRed">Red</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="radioBlue" name="color" value="Red" />
+                                <label for="radioBlue">Blue</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="radioBlack" name="color" value="Red" />
+                                <label for="radioBlack">Black</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="radioGreen" name="color" value="Red" />
+                                <label for="radioGreen">Green</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="radioWhite" name="color" value="Red" />
+                                <label for="radioWhite">White</label>
+                            </p>
+                            <p>
+                                    <input type="radio" id="anotherColor" name="color" value="Другое" />
+                                    <label for="anotherColor">Другое:</label>
+                                    <input aria-label="Please fill your name" type="text" placeholder="Мой ответ">
+                            </p>
+                        </div>
+
+                        <div>
+                            <legend>
+                                What town you like more?
+                                <span class="labelstar">*</span>
+                            </legend>
+                            <select name="town" >
+                                <option value="" disabled selected>Make your choise</option>
+                                <option value="brest">Brest</option>
+                                <option value="minsk">Minsk</option>
+                                <option value="gomel">Gomel</option>
+                                <option value="grodno">Grodno</option>
+                                <option value="mogilev">Mogilev</option>
+                                <option value="vitebsk">Vitebsk</option>
+                            </select>
+                        </div>
+                        <div>
+                            <legend>
+                                Please describe (at least 50 symbols on symbols) your favorite programming language
+                                <span class="labelstar">*</span>
+                            </legend>
+                            <div>
+                                <input class="textInput" type="text" placeholder="Мой ответ">
+                            </div>
+                        </div>
+                        <div>
+                            <legend>
+                                What years of education did you really like?
+                                <span class="labelstar">*</span>
+                            </legend>
+                            <div class="squaredFour">
+                                <p>
+                                    <input type="checkbox" id="checkFirst" name="ears" value="First" />
+                                    <label for="checkFirst">First</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="checkSecond" name="ears" value="Second" />
+                                    <label for="checkSecond">     Second</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="checkThird" name="ears" value="Third" />
+                                    <label for="checkThird">     Third</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="checkFourth" name="ears" value="Fourth" />
+                                    <label for="checkFourth">Fourth</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <legend>
+                                Please send any image
+                                <span class="labelstar">*</span>
+                            </legend>
+                            <input type="file" name="file" multiple=""/>
+                        </div>
+                        <div>
+                            <legend>
+                                Set last Monday?
+                                <span class="labelstar">*</span>
+                            </legend>
+                            <input type="date" />
+                        </div>
+                        <input type="submit">
+                    </form>
+                    <footer>
+
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
