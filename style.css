@@ -14,9 +14,16 @@
     font-style: italic;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    #777;
+    color: #777;
     font-size: 15px;
     font-style: italic;
+}
+input{
+    border: none;
+}
+
+input:focus{
+    outline: none;
 }
 
 body {
@@ -33,7 +40,7 @@ body {
 
 .backhead{
     height: 5%;
-    background-color: darkviolet;
+    background-color: darkgreen;
     padding: 5%;
 }
 
@@ -53,7 +60,7 @@ body {
 header
 {
     height:10%;
-    border-top:10px solid violet;
+    border-top:10px solid greenyellow;
     position: static;
     top:0px;
 }
@@ -90,7 +97,8 @@ legend{
 
 
 .textInput:focus{
-    border-bottom: 2px solid violet;
+    border-bottom: 2px solid greenyellow;
+    outline: none;
     animation-name: inputLine;
     animation-duration: 0.5s;
 }
@@ -137,7 +145,7 @@ legend{
     content: '';
     width: 12px;
     height: 12px;
-    background: violet;
+    background: greenyellow;
     position: absolute;
     top: 4px;
     left: 4px;
